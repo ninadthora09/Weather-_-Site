@@ -19,6 +19,8 @@ window.addEventListener("load", () => {
 });
 
 
+
+
 const APIkey = '21e562c7f64c3044f3e002f51c251a03';
 
 // Loader shimmer
@@ -98,3 +100,17 @@ async function getWeather() {
 // Event listeners
 search.addEventListener('click', getWeather);
 input.addEventListener('keypress', e => e.key === 'Enter' && getWeather());
+
+
+const floatingContainer = document.querySelector(".container");
+
+document.addEventListener("mousemove", (e) => {
+  const x = (window.innerWidth / 2 - e.pageX) / 60;
+  const y = (window.innerHeight / 2 - e.pageY) / 60;
+
+  floatingContainer.style.transform = `rotateY(${x}deg) rotateX(${y}deg) translateZ(0px)`;
+});
+
+document.addEventListener("mouseleave", () => {
+  floatingContainer.style.transform = "rotateY(0deg) rotateX(0deg)";
+});

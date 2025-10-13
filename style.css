@@ -93,6 +93,8 @@ body {
   transform: translateY(0);
 }
 
+
+
 /* 🌫️ Elegant Glass Container */
 .container {
   position: relative;
@@ -348,5 +350,15 @@ body {
 @keyframes breathe {
   0% { backdrop-filter: blur(8px); }
   100% { backdrop-filter: blur(14px); }
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.container {
+  animation: float 6s ease-in-out infinite;
 }
 
