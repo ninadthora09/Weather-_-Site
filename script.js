@@ -69,8 +69,8 @@ async function getWeather() {
       Rain: { img: 'images/rain.jpeg', color: 'rgba(52, 152, 219, 0.3)' },
       Snow: { img: 'images/snow.png', color: 'rgba(236, 240, 241, 0.3)' },
       Clouds: { img: 'images/cloud.png', color: 'rgba(149, 165, 166, 0.3)' },
-      Mist: { img: 'images/mist_image.png', color: 'rgba(189, 195, 199, 0.3)' },
-      Haze: { img: 'images/404.jpg', color: 'rgba(211, 84, 0, 0.3)' },
+      Mist: { img: 'images/mist.png', color: 'rgba(189, 195, 199, 0.3)' },
+      Haze: { img: 'images/mist.png', color: 'rgba(211, 84, 0, 0.3)' },
       Default: { img: 'images/clear_image.png', color: 'rgba(255,255,255,0.2)' },
     };
 
