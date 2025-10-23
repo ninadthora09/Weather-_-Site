@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="welcome-screen">
-        <div class="welcome-content">
-             <h1 class="welcome-title">Welcome to <span>WeatherScope</span> ☀️</h1>
-             <p class="welcome-text">Your smart weather companion 🌦️</p>
-        </div>
+      <div class="welcome-content">
+        <h1 class="welcome-title">Welcome to <span>WeatherScope</span> ☀️</h1>
+        <p class="welcome-text">Your smart weather companion 🌦️</p>
+      </div>
     </div>
 
     <div class="container">
-        <div class="search-box">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" id="searchInput"  placeholder="Enter Your location">
-            <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
-        </div>
-        <div class="weather-box">
-            <div class="box">
-                <div class="info-weather">
-                    <div class="weather">
-                        <img src="images/clear_sky.png">
-                        <p class="temperature">0<span>°C</span></p>
-                        <p class="description">Broken Clouds</p>
-                    </div>
-                </div>
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" id="searchInput" placeholder="Enter Your location" />
+        <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+      </div>
+      <div class="weather-box">
+        <div class="box">
+          <div class="info-weather">
+            <div class="weather">
+              <img src="images/clear_sky.png" />
+              <p class="temperature">0<span>°C</span></p>
+              <p class="description">Broken Clouds</p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fa-solid fa-water"></i>
+          <div class="text">
+            <div class="info-humidity">
+              <span>0%</span>
+            </div>
+            <p>Humidity</p>
+          </div>
         </div>
 
-        <div class="weather-details">
-            <div class="humidity">
-                <i class="fa-solid fa-water"></i>
-                <div class="text">
-                    <div class="info-humidity">
-                        <span>0%</span>
-                    </div>
-                    <p>Humidity</p>
-                </div>
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <div class="info-humidity">
+              <span>0km/h</span>
             </div>
-
-            <div class="wind">
-                <i class="fa-solid fa-wind"></i>
-                <div class="text">
-                    <div class="info-humidity">
-                        <span>0km/h</span>
-                    </div>
-                    <p>Wind Speed</p>
-                </div>
-            </div>
+            <p>Wind Speed</p>
+          </div>
         </div>
-        <div class="not-found">
-            <div class="box">
-                <img src="images/error.png">
-                <p>Oops! Location not found!</p>
-            </div>
+      </div>
+      <div class="not-found">
+        <div class="box">
+          <img src="images/error.png" />
+          <p>Oops! Location not found!</p>
         </div>
+      </div>
     </div>
+    <div class="forecast-container">
+          <!-- Forecast cards will be inserted here dynamically -->
+        </div>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
